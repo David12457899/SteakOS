@@ -52,4 +52,4 @@ Mkfile.old
 dkms.conf
 
 # Project specific ignoers
-./bin/*
+*.bin

@@ -10,6 +10,7 @@ This is a documentation of the boot process.
 # The Boot Sector
 
 - Last 2 bytes are set to the magic number 0xaa55.
+- Loaded into memory address of 0x7c00
 
 # Definitions
 
