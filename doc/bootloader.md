@@ -4,8 +4,8 @@ This is a documentation of the boot process.
 
 # Flow
 
-- BIOS loads the OS from Sector 0 of a disk, the boot sector.
-    - Valides that an OS is present first.
+- BIOS loads the MBR from Sector 0 of a disk, the boot sector.
+    - Valides that an MBR is present first.
 
 # The Boot Sector
 
@@ -14,3 +14,4 @@ This is a documentation of the boot process.
 # Definitions
 
 * Sector - Part of a disk, traditionally 512 bytes. 
+* MBR - Master Boot Record
