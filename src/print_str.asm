@@ -1,3 +1,5 @@
+; Printing a string
+; Assuming that the string pointer was pushed before
 print_str:
     push bp
     mov bp, sp
