@@ -3,9 +3,7 @@ print_hex:
     push bp
     mov bp, sp
     pusha
-
-    ; declare the string
-    hex_str db "0x0000", 0
+    
 
     ; Get the address of the end of the string
     mov bx, hex_str
@@ -19,7 +17,7 @@ print_hex:
         cmp al, 10
         jb is_digit        
         is_letter:
-            add al, 65
+            add al, 55
             jmp change_str_pos
 
         is_digit:
@@ -35,8 +33,10 @@ print_hex:
         cmp dx, 0
         ja loop_each_digit
 
-    push hex_str
+    mov bx, hex_str
     call print_str
+
+    call hex_str_cleanup
 
     popa
     mov sp, bp
@@ -44,4 +44,19 @@ print_hex:
 
     ret
 
-%include "./src/print_str.asm"
+hex_str_cleanup:
+    pusha
+
+    mov bx, hex_str
+    mov al, '0'
+
+    mov [bx + 2], al
+    mov [bx + 3], al
+    mov [bx + 4], al
+    mov [bx + 5], al
+
+    popa
+    ret
+
+hex_str:
+    db "0x0000", 0

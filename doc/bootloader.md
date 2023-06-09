@@ -6,6 +6,7 @@ This is a documentation of the boot process.
 
 - BIOS loads the MBR from Sector 0 of a disk, the boot sector.
     - Valides that an MBR is present first.
+- BIOS loads the rest of the OS from the disk by calling an interrupt.
 
 # The Boot Sector
 

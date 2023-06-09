@@ -42,7 +42,7 @@
 *.idb
 *.pdb
 
-# Kernel Module Compile Results
+# Kernel Module Compile Result  s
 *.mod*
 *.cmd
 .tmp_versions/
@@ -51,5 +51,6 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# Project specific ignoers
+# Project specific ignores
 *.bin
+.gdb_history

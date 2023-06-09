@@ -1,7 +1,5 @@
 all:
-	nasm -f bin ./src/print_str.asm -o ./bin/print_str.bin
-	nasm -f bin ./src/print_hex.asm -o ./bin/print_hex.bin
-	nasm -f bin ./src/boot.asm -o ./bin/boot.bin
+	nasm -f bin ./src/boot_sect_main.asm -o ./bin/boot_sect_main.bin
 
 clean:
 	rm -rf ./bin/*
