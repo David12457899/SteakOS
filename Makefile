@@ -1,5 +1,5 @@
 all:
-	nasm -f bin ./src/boot_sect_main.asm -o ./bin/boot_sect_main.bin
+	nasm -f bin ./src/32bit-main.asm -o ./bin/32bit-main.bin
 
 clean:
 	rm -rf ./bin/*

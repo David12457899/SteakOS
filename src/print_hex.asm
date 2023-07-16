@@ -3,7 +3,6 @@ print_hex:
     push bp
     mov bp, sp
     pusha
-    
 
     ; Get the address of the end of the string
     mov bx, hex_str
@@ -34,7 +33,7 @@ print_hex:
         ja loop_each_digit
 
     mov bx, hex_str
-    call print_str
+    call print_str_16
 
     call hex_str_cleanup
 

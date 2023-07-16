@@ -24,7 +24,7 @@ jmp $
 my_str db "test", 0
 
 ; includes
-%include "./src/print_str.asm"
+%include "./src/print_str_16.asm"
 %include "./src/print_hex.asm"
 %include "./src/boot_sect_disk.asm"
 
