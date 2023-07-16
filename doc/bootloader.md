@@ -8,6 +8,10 @@ This is a documentation of the boot process.
     - Valides that an MBR is present first.
 - BIOS loads the rest of the OS from the disk by calling an interrupt.
 
+# Updates Flow
+
+Making sure that we can interact with the BIOS by printing a message in main, then moving from 16 bits to 32 bits in the processor - and printing and additional message 
+
 # The Boot Sector
 
 - Last 2 bytes are set to the magic number 0xaa55.
