@@ -33,7 +33,7 @@ print_hex:
         ja loop_each_digit
 
     mov bx, hex_str
-    call print_str_16
+    call print
 
     call hex_str_cleanup
 

@@ -29,7 +29,7 @@ disk_load:
 
 disk_error:
     mov bx, DISK_ERROR
-    call print_str_16
+    call print
     call print_nl
     mov dh, ah ; ah = error code, dl = disk drive that dropped the error
     call print_hex ; check out the code at http://stanislavs.org/helppc/int_13-1.html
@@ -37,7 +37,7 @@ disk_error:
 
 sectors_error:
     mov bx, SECTORS_ERROR
-    call print_str_16
+    call print
 
 disk_loop:
     jmp $
